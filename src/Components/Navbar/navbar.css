@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem 2rem;
     background-color: #f7f7fd;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
