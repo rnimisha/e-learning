@@ -21,9 +21,9 @@ const Banner = () => {
                 <div className="light-glow"></div>
             </div>
             <div className="banner-mini-info">
-                <MiniInfo number={1000} text={'Excelent courses'}/>
-                <MiniInfo number={1000} text={'Excelent courses'}/>
-                <MiniInfo number={1000} text={'Excelent courses'}/>
+                <MiniInfo number={1290} text1={'Excelent'} text2={'courses'} id ={'1'}/>
+                <MiniInfo number={29} text1={'Proficient'} text2={'tutors'} id ={'0'}/>
+                <MiniInfo number={'100%'} text1={'Creative'} text2={'environment'} id ={'1'}/>
             </div>
         </div>
     </div>

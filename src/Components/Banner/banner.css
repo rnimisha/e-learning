@@ -71,6 +71,11 @@
 
 .banner-mini-info{
     flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height:85%;
 }
 
 .banner-left button{
