@@ -21,3 +21,10 @@
   border-radius: 26px; 
   box-shadow: inset -35px 35px 68px 0px #a0cb8a80, inset 10px -10px 16px 0px #a0cb8a99, 0px 11px 28px 0px #ffffff;
 }
+
+.btn:hover{
+  cursor: pointer;
+  border: 1px solid #a0cb8a80;
+  box-shadow:  -3px 3px 68px 0px #a0cb8a80, inset 10px -10px 16px 0px #a0cb8a99, 0px 11px 28px 0px #ffffff;
+
+}
