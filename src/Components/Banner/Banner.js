@@ -4,6 +4,8 @@ import './banner.css'
 import mainimg from '../../images/main-pic.png'
 import MiniInfo from '../MiniInfo/MiniInfo'
 
+import { motion } from "framer-motion"
+
 const Banner = () => {
   return (
     <div className='banner-container'>
@@ -12,14 +14,14 @@ const Banner = () => {
             <span>Education & Inspiration</span>
             {/* <p>Discover best psrograms built with industry experts</p> */}
 
-            <button class='btn'>Explore courses</button>
+            <button className='btn'>Explore courses</button>
             <div className="aura-effect effect-pos1"></div>
         </div>
 
         <div className="banner-right">
             <div className="banner-img-container">
                 <img src={mainimg} alt="mainbanner" />
-                <div className="light-glow"></div>
+                <motion.div initial ={{opacity : 0}} animate ={{opacity : 1}} transition={{ delay: 1, duration : 1, type : 'tween'}} className="light-glow"></motion.div>
             </div>
             <div className="banner-mini-info">
                 <MiniInfo number={1290} text1={'Excelent'} text2={'courses'} id ={'1'}/>
