@@ -13,6 +13,7 @@ const Banner = () => {
         <div className="banner-right">
             <div className="banner-img-container">
                 <img src={mainimg} alt="mainbanner" />
+                <div className="light-glow"></div>
             </div>
             <div className="banner-mini-info">
                     mini info here

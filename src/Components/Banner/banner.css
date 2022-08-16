@@ -1,5 +1,6 @@
 .banner-container{
-    width: 100%;
+    width: 90%;
+    margin-left:5% ;
     padding: 2rem 0.5rem;
     height: 90vh;
     display: flex;
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    
 }
 .banner-img-container>img{
     min-width: 60%;
@@ -30,6 +32,18 @@
     margin-top: 5%;
 }
 
+.light-glow{
+    background: #fff7a1;
+    position: absolute;
+    width: 20vw;
+    height: 10rem;
+    border-radius: 50%;
+    filter: blur(212px);
+    z-index: -1;
+    top: 2px;
+    left: 60px;
+    filter: blur(80px);
+}
 
 .banner-mini-info{
     flex: 1;
