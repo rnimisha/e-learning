@@ -13,6 +13,7 @@ const Banner = () => {
             {/* <p>Discover best psrograms built with industry experts</p> */}
 
             <button class='btn'>Explore courses</button>
+            <div className="aura-effect effect-pos1"></div>
         </div>
 
         <div className="banner-right">
@@ -24,6 +25,8 @@ const Banner = () => {
                 <MiniInfo number={1290} text1={'Excelent'} text2={'courses'} id ={'1'}/>
                 <MiniInfo number={29} text1={'Proficient'} text2={'tutors'} id ={'0'}/>
                 <MiniInfo number={'100%'} text1={'Creative'} text2={'environment'} id ={'1'}/>
+
+                <span className="aura-effect effect-pos2"></span>
             </div>
         </div>
     </div>
