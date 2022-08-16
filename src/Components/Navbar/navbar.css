@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-around;
     padding: 1.5rem 0rem 2rem;
-    background-color: #f7f7fd;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
 }
