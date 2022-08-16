@@ -4,9 +4,9 @@ import './navbar.css'
 
 const Navbar = () => {
     return (
-    <nav>
+    <nav className ="navigation">
         <div className="nav-logo">
-            LOGO
+            COURSEDEMY
         </div>
         <div className="nav-list">
             <ul>

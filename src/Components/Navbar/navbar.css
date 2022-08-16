@@ -1,0 +1,37 @@
+.navigation{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+    background-color: #f7f7fd;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.nav-logo{
+    flex: 2;
+    display: flex; 
+    margin-left: 5rem;
+
+}
+
+.nav-list{
+    flex: 1;
+}
+
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #252525;
+}
+
