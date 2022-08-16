@@ -7,7 +7,11 @@ const Banner = () => {
   return (
     <div className='banner-container'>
         <div className="banner-left">
-            intro here
+            <span>Providing you with </span>
+            <span>Education & Inspiration</span>
+            {/* <p>Discover best programs built with industry experts</p> */}
+
+            <button class='btn'>Explore courses</button>
         </div>
 
         <div className="banner-right">
