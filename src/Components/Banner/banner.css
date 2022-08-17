@@ -104,13 +104,18 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .banner-mini-info{
-        flex: 0;
-        display: none;
+    .effect-pos1{
+        background: #ebd3f780;
+        width: 10rem;
+        height: 13rem;
     }
 }
 @media only screen and (max-width: 890px) {
 
+
+    .effect-pos1{
+        display: none;
+    }
 
     .banner-container{
         width: 100%;
@@ -125,6 +130,7 @@
         margin-top: 1rem;
         flex: 1;
         width: 20vw;
+        margin-left: 0;
     }
 
 
@@ -163,7 +169,6 @@
 
     .banner-left{
         width: 100vw;
-        margin-left: 2rem;
         margin-top: 1rem;
         justify-content: center;
         align-items: center;

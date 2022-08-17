@@ -9,27 +9,27 @@ import IndividualService from '../IndividualService/IndividualService'
 
 const Service = () => {
 
-    const leftVariant= {
-        whileInView:{
-            x : [-200,0],
-            transition: {
-                duration : 0.5,
-                ease : 'anticipate'
-            }
-        }
-    }
+    // const leftVariant= {
+    //     whileInView:{
+    //         x : [-200,0],
+    //         transition: {
+    //             duration : 0.5,
+    //             ease : 'anticipate'
+    //         }
+    //     }
+    // }
 
 
-    const rightVariant = {
-        whileInView:{
-            x :[200,0],
-            transition: {
-                delay : 0.2,
-                duration : 1,
-                ease : 'anticipate'
-            }
-        }
-    }
+    // const rightVariant = {
+    //     whileInView:{
+    //         x :[200,0],
+    //         transition: {
+    //             delay : 0.2,
+    //             duration : 1,
+    //             ease : 'anticipate'
+    //         }
+    //     }
+    // }
 
     const opacityVariant ={
         whileInView:{

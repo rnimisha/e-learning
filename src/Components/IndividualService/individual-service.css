@@ -1,5 +1,5 @@
 .individual-container{
-    width: 100%;
+    /* width: 100%; */
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,7 @@
     align-items: center;
     margin-top: 5vh;
     padding: 0 2.1rem;
+    flex: 1;
 }
 
 .indi-img{
@@ -38,4 +39,32 @@
     color: #505050;
     margin-top: 0.3rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .individual-container{
+        flex : 0 0 42%;
+        height: 35vh;
+    }
+    .ind-title{
+        font-size: 1.9vw;
+    }
+
+    .individual-container p{
+        font-size: 1.2vw;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .individual-container{
+        flex : 0 0 70%;
+        height: 35vh;
+    }
+    .ind-title{
+        font-size: 2.5vw;
+    }
+
+    .individual-container p{
+        font-size: 2vw;
+    }
 }

@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .effect-pos1{
@@ -43,6 +44,7 @@
     bottom: 20px;
     left: 10px;
     filter: blur(90px);
+    
 }
 
 .effect-pos2{
@@ -53,4 +55,37 @@
     top: 0px;
     right: 0px;
     filter: blur(300px);
+}
+
+@media only screen and (max-width: 1000px) {
+    .service-container{
+        margin-top: 1vh;
+    }
+
+    .service-title{
+        margin-top: 1vh;
+    }
+
+    .service-title p{
+        font-size: 1.9vw;
+    }
+    .service-title h1
+    {
+        font-size: 2.4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 890px) {
+
+    .service-title p{
+        margin-top: 5vh;
+        font-size: 2vw;
+    }
+    .service-title>h1
+    {
+        font-size: 4.5vw;
+        margin-bottom: -0.2rem;
+    }
+
 }
