@@ -1,19 +1,18 @@
 import React from 'react'
 import './individual-service.css'
-import service1 from '../../images/service1.webp'
 
 
-const IndividualService = () => {
+const IndividualService = ({img, title, info}) => {
   return (
     <div className='individual-container'>
         <div className="indi-img">
-            <img src={service1} alt="" />
+            <img src={img} alt="" />
         </div>
         <div className="ind-title">
-            Scholarship
+            {title}
         </div>
         <p>
-        cfnncjmcfn
+            {info}
         </p>
     </div>
   )

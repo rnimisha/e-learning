@@ -82,13 +82,6 @@
     margin-top: 2rem;
 }
 
-.aura-effect{
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(80px);
-}
-
 .effect-pos2{
     background: #a0cb8a90;
     width: 40rem;
