@@ -6,12 +6,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3vh;
 }
 
+.service-title{
+    margin-top: 5vh;
+}
+
+.service-title p{
+    font-size: 1.2vw;
+    color: #f7c744;
+    text-align: center;
+}
 .service-title>h1
 {
     font-size: 3.2vw;
-    color: #f7c744;
+    color: #000;
     font-weight: 700;
     width: 100%;
+    margin-bottom: 2rem;
 }
+.service-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
