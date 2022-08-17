@@ -9,12 +9,14 @@
 
 .mini-info-container>:nth-child(1)
 {
-    font-size: 1.3rem;
+    font-size: 2vw;
     font-weight: 700;
 }
 
 .mini-info-container>:nth-child(2),
 .mini-info-container>:nth-child(3)
 {
-    font-size: 0.69rem;
+    font-size: 1vw;
+    line-height: -2px;
+    color: #505050;
 }

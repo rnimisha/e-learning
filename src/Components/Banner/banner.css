@@ -18,12 +18,12 @@
 
 .banner-left>:nth-child(1)
 {
-    font-size: 1.8rem;
+    font-size: 4vw;
 }
 
 .banner-left>:nth-child(2)
 {
-    font-size: 2.7rem;
+    font-size: 4vw;
     font-weight: 700;
     color: #f7c744;
 
@@ -51,8 +51,8 @@
     
 }
 .banner-img-container>img{
-    min-width: 60%;
-    min-height: 60%;
+    min-width: 65%;
+    min-height: 65%;
     max-width: 95%;
     max-height: 95%;
 }
@@ -108,3 +108,104 @@
     left: 10px;
     filter: blur(90px);
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .banner-mini-info{
+        flex: 0;
+        display: none;
+    }
+}
+@media only screen and (max-width: 890px) {
+
+
+    .banner-container{
+        width: 100%;
+        margin-left: 0 ;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-left{
+        margin-left: 2rem;
+        margin-top: 1rem;
+        flex: 1;
+        width: 20vw;
+    }
+
+
+    .banner-right{
+        flex: 2;
+        display: block;
+    }
+
+    .banner-mini-info{
+        flex: 0;
+        display: none;
+    }
+
+    .banner-img-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+    .banner-img-container>img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .banner-container{
+        margin-left: 0 ;
+        display: flex;
+        justify-items: center;
+        flex-direction: column-reverse;
+        margin-top: 15vh;
+    }
+
+    .banner-left{
+        width: 100vw;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .banner-right{
+        /* margin : 100px; */
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .banner-img-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+    .banner-img-container>img{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .banner-left>:nth-child(1)
+    {
+        font-size: 5.5vw;
+    }
+    .banner-left>:nth-child(2)
+    {
+        font-size: 5.5vw;
+    }
+    .btn{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+

@@ -9,20 +9,26 @@ import { motion } from "framer-motion"
 const Banner = () => {
 
     const leftSideVariant = {
-        whileInView :{
-            x : [-100, 0],
+        initial : {
+            opacity : 0
+        },
+        animate :{
+            opacity : 1,
             transition: {
+                delay : 0.5,
                 duration : 0.5,
-                ease: 'easeInOut'
             }
         }
     }
     const bottomVariant ={
-        whileInView :{
-            y : [100, 0],
+        initial :{
+            x : -540
+        },
+        animate :{
+            x : 0,
             transition: {
                 duration : 0.5,
-                ease: 'easeInOut'
+                ease: 'easeInOut',
             }
         }
     }
@@ -30,17 +36,17 @@ const Banner = () => {
     return (
         <div className='banner-container'>
             <div className="banner-left">
-                <motion.span variants={leftSideVariant} whileInView="whileInView">Providing you with </motion.span>
-                <motion.span variants={leftSideVariant} whileInView="whileInView">Education & Inspiration</motion.span>
+                <motion.span variants={bottomVariant} initial="initial" animate = "animate">Providing you</motion.span>
+                <motion.span variants={bottomVariant} initial="initial" animate = "animate">Education & Inspiration</motion.span>
                 {/* <p>Discover best psrograms built with industry experts</p> */}
 
-                <motion.button variants={bottomVariant} whileInView="whileInView" className='btn'>Explore courses</motion.button>
+                <motion.button variants={bottomVariant} initial="initial" animate = "animate" className='btn'>Explore courses</motion.button>
                 <div className="aura-effect effect-pos1"></div>
             </div>
 
             <div className="banner-right">
                 <div className="banner-img-container">
-                    <motion.img src={mainimg} alt="mainbanner" variants={bottomVariant} whileInView="whileInView"/>
+                    <motion.img src={mainimg} alt="mainbanner" variants={leftSideVariant} initial="initial" animate = "animate"/>
                     <motion.div 
                     whileInView ={{scale : [0,1]}}
                     transition = {{duration : 1 , delay : 1, ease : 'easeInOut'}}

@@ -1,13 +1,13 @@
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){
 .navigation{
     height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 1.5rem 0rem 2rem;
-    backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-}
-
+    backdrop-filter: blur(5px);
+}}
 .nav-logo{
     flex: 2;
     display: flex; 
@@ -34,3 +34,8 @@
     color: #505050;
 }
 
+@media only screen and (max-width: 768px) {
+    .navigation{
+        display: none;
+    }
+}
