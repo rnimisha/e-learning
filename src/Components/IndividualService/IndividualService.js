@@ -1,10 +1,11 @@
 import React from 'react'
 import './individual-service.css'
+import { motion } from "framer-motion"
 
+const IndividualService = ({img, title, info, variant}) => {
 
-const IndividualService = ({img, title, info}) => {
   return (
-    <div className='individual-container'>
+    <motion.div className='individual-container' variants={variant} whileInView={variant.whileInView}>
         <div className="indi-img">
             <img src={img} alt="" />
         </div>
@@ -14,7 +15,7 @@ const IndividualService = ({img, title, info}) => {
         <p>
             {info}
         </p>
-    </div>
+    </motion.div>
   )
 }
 
