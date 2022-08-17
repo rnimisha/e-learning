@@ -1,0 +1,17 @@
+.service-container{
+    width: 90%;
+    margin-left:5% ;
+    padding: 2rem 0.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title>h1
+{
+    font-size: 3.2vw;
+    color: #f7c744;
+    font-weight: 700;
+    width: 100%;
+}
