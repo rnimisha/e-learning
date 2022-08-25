@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './Components/Banner/Banner'
+import Course from './Components/Course/Course'
 import Navbar from './Components/Navbar/Navbar'
 import Service from './Components/Service/Service'
 
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar/>
       <Banner/>
       <Service/>
+      <Course/>
     </>
   )
 }

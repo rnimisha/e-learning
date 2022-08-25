@@ -7,7 +7,7 @@ const IndividualService = ({img, title, info, variant}) => {
   return (
     <motion.div className='individual-container' variants={variant} whileInView={variant.whileInView}>
         <div className="indi-img">
-            <img src={img} alt="" />
+            <img src={img} alt={title} />
         </div>
         <div className="ind-title">
             {title}
