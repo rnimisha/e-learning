@@ -30,22 +30,22 @@ const CourseDetail =[
     {
         id : 5,
         name : 'Chemistry',
-        Trending : true,
+        Trending : false,
         Recommended : true,
         img :'images/chemistry.webp'
     },
     {
         id : 6,
         name : 'Architecture',
-        Trending : false,
+        Trending : true,
         Recommended : true,
         img :'images/architect.webp'
     },
     {
         id : 7,
-        name : 'Website Devlopment',
+        name : 'Web Devloper',
         Trending : true,
-        Recommended : true,
+        Recommended : false,
         img :'images/webdev.webp'
     },
 ]
