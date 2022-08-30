@@ -7,8 +7,18 @@ import remote from '../../images/remote.webp'
 import modern from '../../images/abacus.png'
 import IndividualService from '../IndividualService/IndividualService'
 
-const Service = ({opacityVariant, innerref}) => {
+const Service = ({ innerref}) => {
 
+    const opacityVariant ={
+        whileInView:{
+            y :[200,0],
+            opacity : [0,1],
+            transition: {
+                duration : 0.5,
+                ease : 'anticipate'
+            }
+        }
+    }
     return (
         <div className='service-container' ref={innerref}>
             <div className="service-title">
