@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-@supports ((scroll-behavior: none)){*{
+*{
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}}
+}
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){.btn{
   width: 10rem;
@@ -44,4 +44,8 @@
     height: 1.8rem;
     font-size: 0.5rem;
   }
+}
+
+.nav-logo{
+  cursor: pointer;
 }

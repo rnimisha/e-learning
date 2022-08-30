@@ -6,7 +6,7 @@ const Navbar = ({scrollToSection, home, service, course, contact}) => {
 
     return (
     <nav className ="navigation">
-        <div className="nav-logo">
+        <div className="nav-logo" onClick={() =>{scrollToSection(home)}}>
             COURSEDEMY
         </div>
         <div className="nav-list">
