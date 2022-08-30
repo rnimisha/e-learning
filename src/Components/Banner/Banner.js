@@ -6,20 +6,8 @@ import MiniInfo from '../MiniInfo/MiniInfo'
 
 import { motion } from "framer-motion"
 
-const Banner = () => {
+const Banner = ({opacityVariant}) => {
 
-    const leftSideVariant = {
-        initial : {
-            opacity : 0
-        },
-        animate :{
-            opacity : 1,
-            transition: {
-                delay : 0.5,
-                duration : 0.5,
-            }
-        }
-    }
     const bottomVariant ={
         initial :{
             x : -540
@@ -46,7 +34,7 @@ const Banner = () => {
 
             <div className="banner-right">
                 <div className="banner-img-container">
-                    <motion.img src={mainimg} alt="mainbanner" variants={leftSideVariant} initial="initial" animate = "animate"/>
+                    <motion.img src={mainimg} alt="mainbanner" variants={opacityVariant} initial={opacityVariant.initial} animate = {opacityVariant.animate}/>
                     <motion.div 
                     whileInView ={{scale : [0,1]}}
                     transition = {{duration : 1 , delay : 1, ease : 'easeInOut'}}

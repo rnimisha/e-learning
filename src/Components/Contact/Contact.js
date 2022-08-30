@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.css'
-const Contact = () => {
+import './contact.css';
+import emailSentGif from '../../images/emailgif.gif';
+import { motion } from "framer-motion";
+
+const Contact = ({opacityVariant}) => {
 
     const [isEmailsent, setEmailSent] = useState(false);
 
     const sendMail = (e)=>{
         e.preventDefault();
-
         emailjs.sendForm('service_4iectkm', 'template_zqofwga', e.target, 'ol7dPKZzuzqQH69XF')
         .then((result) => {
             console.log(result.text);
@@ -37,7 +39,7 @@ const Contact = () => {
                 <h1>Keep in touch</h1>
             </div>
             <div className="contact-form-container">
-            {!isEmailsent && <form onSubmit={sendMail}>
+            {!isEmailsent && <motion.form onSubmit={sendMail} variants={opacityVariant} initial={opacityVariant.initial} animate = {opacityVariant.animate}>
                 <div>
                     <input type="text" placeholder='Name' name= 'name'/>
                     <input type="text" placeholder='Email' name= 'email'/>
@@ -46,10 +48,11 @@ const Contact = () => {
                     <textarea name="message" placeholder='You message here...'></textarea>
                 </div>
                 <button className='btn' type='submit'>Send</button>
-            </form>}
+            </motion.form>}
             {isEmailsent &&
-            <p>success</p>
-
+            <motion.div className = 'email-success-container' variants={opacityVariant} initial={opacityVariant.initial} animate = {opacityVariant.animate}>
+                <img src={emailSentGif} alt="Success" />
+            </motion.div>
             }
             </div>
             <div className="aura-effect effect-pos1"></div>
