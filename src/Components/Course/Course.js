@@ -2,16 +2,15 @@ import React, { useState } from 'react'
 import './course.css'
 import CourseDetail from  '../../course-data'
 import IndividualService from '../IndividualService/IndividualService'
+import shortid from 'shortid';
 
 const recommended = CourseDetail.filter((item)=>{
-    
     return item.Recommended === true
 }).slice(0,4);
 
 const Course = ({innerref}) => {
     const [highlightTopic, setHighlightTopic] =useState('Recommended');
     const [courseData, setCourseData] = useState(recommended);
-
 
     const opacityVariant ={
         whileInView:{
@@ -52,13 +51,12 @@ const Course = ({innerref}) => {
             </div>
             <div className="course-details">
               {
-                courseData.map((courseitem, index)=>{
-                    const {id, name, img} = courseitem;
+                courseData.map((courseitem)=>{
+                    const { name, img} = courseitem;
                     return(
-                        <>
-                        {console.log(id, index)}
-                            <IndividualService key = {id} img={img} title={name} info={'We are accessible anywhere anytime through remote services.'} variant={opacityVariant}/>
-                        </>
+                        <React.Fragment key={shortid.generate()}>
+                            <IndividualService img={img} title={name} info={'We are accessible anywhere anytime through remote services.'} variant={opacityVariant}/>
+                        </React.Fragment>
                     )
                 })
               }
