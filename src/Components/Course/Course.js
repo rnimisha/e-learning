@@ -50,7 +50,7 @@ const Course = () => {
                 <span onClick={() =>changeMenu('Recommended')} style={{color : highlightTopic === 'Recommended' ? '#f7c744' : '#505050'}}>Recommended</span>
                 <span onClick={() =>changeMenu('Trending')}  style={{color : highlightTopic === 'Trending' ? '#f7c744' : '#505050'}}>Now Trending</span>
             </div>
-            <div className="service-details">
+            <div className="course-details">
               {
                 courseData.map((courseitem)=>{
                     const {id, name, img} = courseitem;
@@ -62,6 +62,8 @@ const Course = () => {
                 })
               }
             </div>
+            <div className="aura-effect effect-pos1"></div>
+            <div className="aura-effect effect-pos2"></div>
 
 
         </div>
