@@ -14,9 +14,9 @@ const Contact = () => {
                     <input type="text" placeholder='Email'/>
                 </div>
                 <div>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <textarea name="message" placeholder='You message here...'></textarea>
                 </div>
-                <button>Send</button>
+                <button className='btn'>Send</button>
                </form>
             </div>
             <div className="aura-effect effect-pos1"></div>
