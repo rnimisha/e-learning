@@ -38,7 +38,7 @@ const App = () => {
   return (
     <>
       <Navbar scrollToSection={scrollToSection} home={home} service={service} course={course} contact={contact}/>
-      <Banner opacityVariant={opacityVariant} innerref={home}/>
+      <Banner opacityVariant={opacityVariant} innerref={home} scrollToSection={scrollToSection} course={course}/>
       <Service  innerref={service}/>
       <Course innerref= {course}/>
       <Contact opacityVariant={opacityVariant} innerref={contact}/>

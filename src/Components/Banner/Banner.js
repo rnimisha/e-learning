@@ -6,7 +6,7 @@ import MiniInfo from '../MiniInfo/MiniInfo'
 
 import { motion } from "framer-motion"
 
-const Banner = ({opacityVariant, innerref}) => {
+const Banner = ({opacityVariant, innerref, scrollToSection, course}) => {
 
     const bottomVariant ={
         initial :{
@@ -28,7 +28,7 @@ const Banner = ({opacityVariant, innerref}) => {
                 <motion.span variants={bottomVariant} initial="initial" animate = "animate">Education & Inspiration</motion.span>
                 {/* <p>Discover best psrograms built with industry experts</p> */}
 
-                <motion.button variants={bottomVariant} initial="initial" animate = "animate" className='btn'>Explore courses</motion.button>
+                <motion.button variants={bottomVariant} initial="initial" animate = "animate" onClick={() =>{scrollToSection(course)}} className='btn'>Explore courses</motion.button>
                 <div className="aura-effect effect-pos1"></div>
             </div>
 

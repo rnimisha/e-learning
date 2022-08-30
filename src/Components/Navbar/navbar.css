@@ -36,8 +36,49 @@
     color: #505050;
 }
 
-@media only screen and (max-width: 768px) {
+.mini-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-menu>div{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    padding: 10px 0 0 20px;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 1.4rem;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
     .navigation{
+        top: 0;
+    }
+    .nav-list ul{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 900px) {
+    .mini-menu{
         display: none;
     }
 }
