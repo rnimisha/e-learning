@@ -7,44 +7,10 @@ import remote from '../../images/remote.webp'
 import modern from '../../images/abacus.png'
 import IndividualService from '../IndividualService/IndividualService'
 
-const Service = () => {
-
-    // const leftVariant= {
-    //     whileInView:{
-    //         x : [-200,0],
-    //         transition: {
-    //             duration : 0.5,
-    //             ease : 'anticipate'
-    //         }
-    //     }
-    // }
-
-
-    // const rightVariant = {
-    //     whileInView:{
-    //         x :[200,0],
-    //         transition: {
-    //             delay : 0.2,
-    //             duration : 1,
-    //             ease : 'anticipate'
-    //         }
-    //     }
-    // }
-
-    const opacityVariant ={
-        whileInView:{
-            y :[200,0],
-            opacity : [0,1],
-            transition: {
-                duration : 0.5,
-                ease : 'anticipate'
-            }
-        }
-    }
-
+const Service = ({opacityVariant, innerref}) => {
 
     return (
-        <div className='service-container'>
+        <div className='service-container' ref={innerref}>
             <div className="service-title">
                 <p>Our Services</p>
                 <h1>What we offer?</h1>

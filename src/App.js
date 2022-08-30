@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from './Components/Banner/Banner'
 import Contact from './Components/Contact/Contact'
 import Course from './Components/Course/Course'
@@ -6,6 +6,21 @@ import Navbar from './Components/Navbar/Navbar'
 import Service from './Components/Service/Service'
 
 const App = () => {
+
+  //ref hooks for nav scroll
+  const home = useRef(null)
+  const service = useRef(null)
+  const course = useRef(null)
+  const contact = useRef(null)
+
+  //on click on navigation link
+  const scrollToSection= (scrollPage)=>{
+    if(scrollPage.current)
+    {
+      scrollPage.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+      
+  }
 
   const opacityVariant = {
     initial : {
@@ -22,11 +37,11 @@ const App = () => {
 
   return (
     <>
-      <Navbar/>
-      <Banner opacityVariant={opacityVariant}/>
-      <Service/>
-      <Course/>
-      <Contact opacityVariant={opacityVariant}/>
+      <Navbar scrollToSection={scrollToSection} home={home} service={service} course={course} contact={contact}/>
+      <Banner opacityVariant={opacityVariant} innerref={home}/>
+      <Service opacityVariant={opacityVariant} innerref={service}/>
+      <Course innerref= {course}/>
+      <Contact opacityVariant={opacityVariant} innerref={contact}/>
     </>
   )
 }

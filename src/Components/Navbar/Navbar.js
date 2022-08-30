@@ -2,7 +2,8 @@ import React from 'react'
 import './navbar.css'
 
 
-const Navbar = () => {
+const Navbar = ({scrollToSection, home, service, course, contact}) => {
+
     return (
     <nav className ="navigation">
         <div className="nav-logo">
@@ -10,10 +11,10 @@ const Navbar = () => {
         </div>
         <div className="nav-list">
             <ul>
-                <li>Home</li>
-                <li>Service</li>
-                <li>Courses</li>
-                <li>Contact</li>
+                <li onClick={() =>{scrollToSection(home)}}>Home</li>
+                <li onClick={() =>{scrollToSection(service)}}>Service</li>
+                <li onClick={() =>{scrollToSection(course)}}>Courses</li>
+                <li onClick={() =>{scrollToSection(contact)}}>Contact</li>
             </ul>
         </div>
     </nav>

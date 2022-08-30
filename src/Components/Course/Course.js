@@ -8,7 +8,7 @@ const recommended = CourseDetail.filter((item)=>{
     return item.Recommended === true
 }).slice(0,4);
 
-const Course = () => {
+const Course = ({innerref}) => {
     const [highlightTopic, setHighlightTopic] =useState('Recommended');
     const [courseData, setCourseData] = useState(recommended);
 
@@ -42,7 +42,7 @@ const Course = () => {
     }
 
     return (
-        <div className='course-container'>
+        <div className='course-container' ref={innerref}>
             <div className="course-title">
                 <h1>Courses</h1>
             </div>
@@ -52,11 +52,12 @@ const Course = () => {
             </div>
             <div className="course-details">
               {
-                courseData.map((courseitem)=>{
+                courseData.map((courseitem, index)=>{
                     const {id, name, img} = courseitem;
                     return(
                         <>
-                            <IndividualService img={img} title={name} info={'We are accessible anywhere anytime through remote services.'} variant={opacityVariant} key={id}/>
+                        {console.log(id, index)}
+                            <IndividualService key = {id} img={img} title={name} info={'We are accessible anywhere anytime through remote services.'} variant={opacityVariant}/>
                         </>
                     )
                 })

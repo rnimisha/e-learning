@@ -4,7 +4,7 @@ import './contact.css';
 import emailSentGif from '../../images/emailgif.gif';
 import { motion } from "framer-motion";
 
-const Contact = ({opacityVariant}) => {
+const Contact = (props) => {
 
     const [isEmailsent, setEmailSent] = useState(false);
 
@@ -33,13 +33,13 @@ const Contact = ({opacityVariant}) => {
     
 
     return (
-        <div className='contact-container'>
+        <div className='contact-container' ref={props.innerref}>
             <div className="service-title">
                 <p>Contact Us</p>
                 <h1>Keep in touch</h1>
             </div>
             <div className="contact-form-container">
-            {!isEmailsent && <motion.form onSubmit={sendMail} variants={opacityVariant} initial={opacityVariant.initial} animate = {opacityVariant.animate}>
+            {!isEmailsent && <motion.form onSubmit={sendMail} variants={props.opacityVariant} initial={props.opacityVariant.initial} animate = {props.opacityVariant.animate}>
                 <div>
                     <input type="text" placeholder='Name' name= 'name'/>
                     <input type="text" placeholder='Email' name= 'email'/>
@@ -50,7 +50,7 @@ const Contact = ({opacityVariant}) => {
                 <button className='btn' type='submit'>Send</button>
             </motion.form>}
             {isEmailsent &&
-            <motion.div className = 'email-success-container' variants={opacityVariant} initial={opacityVariant.initial} animate = {opacityVariant.animate}>
+            <motion.div className = 'email-success-container' variants={props.opacityVariant} initial={props.opacityVariant.initial} animate = {props.opacityVariant.animate}>
                 <img src={emailSentGif} alt="Success" />
             </motion.div>
             }

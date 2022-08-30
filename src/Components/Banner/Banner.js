@@ -6,7 +6,7 @@ import MiniInfo from '../MiniInfo/MiniInfo'
 
 import { motion } from "framer-motion"
 
-const Banner = ({opacityVariant}) => {
+const Banner = ({opacityVariant, innerref}) => {
 
     const bottomVariant ={
         initial :{
@@ -22,7 +22,7 @@ const Banner = ({opacityVariant}) => {
     }
       
     return (
-        <div className='banner-container'>
+        <div className='banner-container' ref={innerref}>
             <div className="banner-left">
                 <motion.span variants={bottomVariant} initial="initial" animate = "animate">Providing you</motion.span>
                 <motion.span variants={bottomVariant} initial="initial" animate = "animate">Education & Inspiration</motion.span>
