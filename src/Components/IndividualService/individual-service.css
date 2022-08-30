@@ -1,4 +1,4 @@
-.individual-container{
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){.individual-container{
     /* width: 100%; */
     height: 40vh;
     display: flex;
@@ -15,7 +15,7 @@
     margin-top: 5vh;
     padding: 0 2.1rem;
     flex: 1;
-}
+}}
 
 .indi-img{
     display: flex;

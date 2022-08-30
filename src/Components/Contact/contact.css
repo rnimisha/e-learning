@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.contact-form-container{
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){.contact-form-container{
     width: 80%;
     background: #ffffff33;
     border-radius: 16px;
@@ -24,7 +24,7 @@
     align-items: center;
     /* align-content: center; */
     flex-wrap: wrap;
-}
+}}
 
 .contact-form-container>form{
     display: flex;
