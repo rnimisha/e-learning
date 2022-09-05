@@ -1,7 +1,7 @@
 
 # E-Learning Website 📖​
 
-A static website created to explore hooks in functional components.
+A static website created to explore and self study react hooks in functional components.
 
 
 
